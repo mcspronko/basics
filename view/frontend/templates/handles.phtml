@@ -1,0 +1,12 @@
+<?php
+
+/** @var $block Template */
+
+use Magento\Framework\View\Element\Template;
+?>
+<h2>Layout Handles</h2>
+<ul>
+    <?php foreach ($block->getData('handles') as $handle): ?>
+        <li><?= $block->escapeHtml($handle);?></li>
+    <?php endforeach; ?>
+</ul>
